@@ -45,7 +45,7 @@ The Return Order Fraud Prediction System is designed to automate and optimize th
 ## Services Overview
 The system consists of four core services:
 
-### 1. Return Order Scheduler Service
+### 1. Return Order Scheduler 
 #### Role
 Schedules and automates the fetching and sending of return order data to Kafka.
 
