@@ -1,0 +1,6 @@
+ Random Undersampling or Oversampling:
+You can randomly undersample the majority class (either non-fraud or fraud) or oversample the minority class to achieve the desired ratios of Fraud to Non-Fraud. This method ensures that you don’t arbitrarily change labels but instead sample the dataset according to the desired proportion.
+
+Undersampling reduces the number of instances from the majority class (e.g., reducing Non-Fraud when you want 70% Fraud and 30% Non-Fraud).
+
+Oversampling involves adding more instances to the minority class (e.g., increasing Fraud instances when you want 70% Fraud).

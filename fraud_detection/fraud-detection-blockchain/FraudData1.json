@@ -1,0 +1,13 @@
+{
+  "orderID": 1,
+  "productCategory": "Electronics",
+  "quantityReturned": 7,
+  "purchaseAmount": 353.2385419,
+  "refundIssued": 483.9909861,
+  "customerAccountAge": 883,
+  "previousReturns": 11,
+  "previousFraudReports": 2,
+  "deliveryType": "Express",
+  "returnCondition": "Opened",
+  "customerScore": 80
+}

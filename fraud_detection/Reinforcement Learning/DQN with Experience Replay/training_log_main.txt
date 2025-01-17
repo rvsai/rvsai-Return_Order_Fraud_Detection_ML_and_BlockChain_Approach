@@ -1,0 +1,151 @@
+Episode 1
+Data Size 7000
+Episode 1, Total Reward: -72
+Episode 2
+Data Size 7000
+Episode 2, Total Reward: 68
+Episode 3
+Data Size 7000
+Episode 3, Total Reward: 132
+Episode 4
+Data Size 7000
+Episode 4, Total Reward: 226
+Episode 5
+Data Size 7000
+Episode 5, Total Reward: 484
+Episode 6
+Data Size 7000
+Episode 6, Total Reward: 590
+Episode 7
+Data Size 7000
+Episode 7, Total Reward: 634
+Episode 8
+Data Size 7000
+Episode 8, Total Reward: 832
+Episode 9
+Data Size 7000
+Episode 9, Total Reward: 958
+Episode 10
+Data Size 7000
+Episode 10, Total Reward: 1020
+Episode 11
+Data Size 7000
+Episode 11, Total Reward: 1196
+Episode 12
+Data Size 7000
+Episode 12, Total Reward: 1284
+Episode 13
+Data Size 7000
+Episode 13, Total Reward: 1302
+Episode 14
+Data Size 7000
+Episode 14, Total Reward: 1298
+Episode 15
+Data Size 7000
+Episode 15, Total Reward: 1404
+Episode 16
+Data Size 7000
+Episode 16, Total Reward: 1498
+Episode 17
+Data Size 7000
+Episode 17, Total Reward: 1490
+Episode 18
+Data Size 7000
+Episode 18, Total Reward: 1516
+Episode 19
+Data Size 7000
+Episode 19, Total Reward: 1602
+Episode 20
+Data Size 7000
+Episode 20, Total Reward: 1730
+Episode 21
+Data Size 7000
+Episode 21, Total Reward: 1626
+Episode 22
+Data Size 7000
+Episode 22, Total Reward: 1784
+Episode 23
+Data Size 7000
+Episode 23, Total Reward: 1830
+Episode 24
+Data Size 7000
+Episode 24, Total Reward: 1796
+Episode 25
+Data Size 7000
+Episode 25, Total Reward: 1784
+Episode 26
+Data Size 7000
+Episode 26, Total Reward: 1834
+Episode 27
+Data Size 7000
+Episode 27, Total Reward: 1878
+Episode 28
+Data Size 7000
+Episode 28, Total Reward: 1872
+Episode 29
+Data Size 7000
+Episode 29, Total Reward: 1978
+Episode 30
+Data Size 7000
+Episode 30, Total Reward: 2008
+Episode 31
+Data Size 7000
+Episode 31, Total Reward: 1976
+Episode 32
+Data Size 7000
+Episode 32, Total Reward: 2044
+Episode 33
+Data Size 7000
+Episode 33, Total Reward: 2162
+Episode 34
+Data Size 7000
+Episode 34, Total Reward: 2016
+Episode 35
+Data Size 7000
+Episode 35, Total Reward: 2100
+Episode 36
+Data Size 7000
+Episode 36, Total Reward: 2182
+Episode 37
+Data Size 7000
+Episode 37, Total Reward: 2148
+Episode 38
+Data Size 7000
+Episode 38, Total Reward: 2132
+Episode 39
+Data Size 7000
+Episode 39, Total Reward: 2244
+Episode 40
+Data Size 7000
+Episode 40, Total Reward: 2368
+Episode 41
+Data Size 7000
+Episode 41, Total Reward: 2294
+Episode 42
+Data Size 7000
+Episode 42, Total Reward: 2262
+Episode 43
+Data Size 7000
+Episode 43, Total Reward: 2294
+Episode 44
+Data Size 7000
+Episode 44, Total Reward: 2328
+Episode 45
+Data Size 7000
+Episode 45, Total Reward: 2306
+Episode 46
+Data Size 7000
+Episode 46, Total Reward: 2310
+Episode 47
+Data Size 7000
+Episode 47, Total Reward: 2406
+Episode 48
+Data Size 7000
+Episode 48, Total Reward: 2438
+Episode 49
+Data Size 7000
+Episode 49, Total Reward: 2422
+Episode 50
+Data Size 7000
+Episode 50, Total Reward: 2518
+Training completed.

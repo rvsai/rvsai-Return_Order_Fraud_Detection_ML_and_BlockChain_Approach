@@ -1,0 +1,10 @@
+Preprocessing: We separate numerical and categorical features, applying scaling to the numerical features and one-hot encoding to the categorical ones.
+
+Train-Test Split: We split the data into training (70%) and testing (30%) sets.
+
+Model Training: We fit a Logistic Regression model with balanced class weights to handle any potential class imbalance.
+
+Model Evaluation: We print out key evaluation metrics such as classification report, ROC-AUC score, and confusion matrix.
+
+Saving the Model: You can save the trained model as a .pkl file using joblib for future use.
+

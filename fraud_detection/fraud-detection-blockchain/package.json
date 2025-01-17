@@ -1,0 +1,13 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "hardhat": "^2.22.17"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "ethers": "^5.7.2",
+    "picklejs": "^0.101.0"
+  }
+}

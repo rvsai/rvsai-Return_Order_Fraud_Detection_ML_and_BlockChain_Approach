@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Order Management</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Make sure background image exists */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Return Order Management</h1>
+        <h2>Add New Return Order</h2>
+        <form id="newReturnOrderForm">
+          
+            <label for="customerId">Customer ID:</label>
+            <input type="text" id="customerId" name="customerId" required><br><br>
+            <label for="productPrice">Product Price:</label>
+            <input type="text" id="productPrice" name="productPrice" required><br><br>
+            <label for="returnOrderCondition">Return Order Condition:</label>
+            <input type="text" id="returnOrderCondition" name="returnOrderCondition"><br><br>
+            <button type="button" class="button" onclick="addReturnOrder()">Add Return Order</button>
+        </form>
+        <h2>Return Orders Status</h2>
+        <table id="returnOrdersTable">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Product Price</th>
+                    <th>Return Order Condition</th>
+                    <th>Refund Status</th>
+                </tr>
+            </thead>
+            <tbody id="returnOrdersTableBody">
+                <!-- Populate this section dynamically with JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // JavaScript code to interact with the Spring Boot backend
+        function addReturnOrder() {
+            var customerId = document.getElementById("customerId").value;
+            var productPrice = document.getElementById("productPrice").value;
+            var returnOrderCondition = document.getElementById("returnOrderCondition").value;
+
+            // Validate input fields
+            if ( !customerId || !productPrice) {
+                alert("Please fill in all required fields.");
+                return;
+            }
+
+            var formData = {
+                customerId: parseInt(customerId),
+                productPrice: parseFloat(productPrice),
+                returnOrderCondition: returnOrderCondition || null
+            };
+
+            fetch('http://localhost:8080/return-orders', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to add return order.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Handle response from server
+                    alert("Return order added successfully!");
+                    // Refresh the return orders table
+                    fetchReturnOrders();
+              
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("An error occurred while processing your request.");
+            });
+        }
+
+        function fetchReturnOrders() {
+            fetch('http://localhost:8080/return-orders')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch return orders.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Clear existing table rows
+                var tableBody = document.getElementById("returnOrdersTableBody");
+                tableBody.innerHTML = "";
+
+                // Populate table with return order data
+                data.forEach(order => {
+                    var row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${order.orderId}</td>
+                        <td>${order.customerId}</td>
+                        <td>${order.productPrice}</td>
+                        <td>${order.returnOrderCondition || ''}</td>
+                        <td>${order.returnOrderStatus}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("An error occurred while fetching return orders.");
+            });
+        }
+
+        // Fetch return orders when the page loads
+        window.onload = function() {
+            fetchReturnOrders();
+        };
+    </script>
+</body>
+</html>

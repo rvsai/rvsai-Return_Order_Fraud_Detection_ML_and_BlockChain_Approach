@@ -1,0 +1,7 @@
+Install below dependency libs
+
+pip install pandas scikit-learn joblib
+
+
+Run
+python LogisticRegression.py
