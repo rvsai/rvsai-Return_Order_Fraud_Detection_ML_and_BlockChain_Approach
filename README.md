@@ -4,6 +4,8 @@
 The Return Order Fraud Prediction System is designed to automate and optimize the reverse supply chain, focusing on identifying and preventing fraudulent return orders. The system leverages advanced technologies, including real-time data streaming, machine learning, and blockchain integration, to enhance operational efficiency and security.
 
 ---
+# Process Flow
+![image](https://github.com/user-attachments/assets/31dff2b9-b77e-4e1e-a25d-69317fe28fc2)
 
 ## Technologies Used
 
